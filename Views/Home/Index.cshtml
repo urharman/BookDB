@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1 style="color:white;">.</h1>
+
+<form method="get" action="/Home/Read" border="0" cellpadding="0" cellspacing="0" style="width:100%;float:left">
+    <div class="input-group">
+        <input type="submit" value="LIBRARY" style="float:right;background:white;" />
+    </div>
+</form>
+
+<br />
+<br />
+
+<form method="post" action="/Home/Create" border="0" cellpadding="0" cellspacing="0" style="width:25%;float:left">
+    <div class="input-group">
+        <h3>ADD BOOK</h3>
+        <input type="text" name="bid" class="form-control" placeholder="BOOK ID" />
+        <input type="text" name="bname" class="form-control" placeholder="BOOK NAME" />
+        <input type="text" name="bauthor" class="form-control" placeholder="AUTHOR NAME" />
+        <input type="text" name="bprice" class="form-control" placeholder="PRICE" />
+        <br />
+        <input type="submit" value="GO" style="float:right;background:white;" />
+    </div>
+</form>
+
+<form method="post" action="/Home/Delete" border="0" cellpadding="0" cellspacing="0" style="width:25%;float:right">
+    <div class="input-group">
+        <h3>DELETE BOOK</h3>
+        <input type="text" name="bid" class="form-control" placeholder="BOOK ID" />
+        <input type="submit" value="GO" style="float:right;background:white;" />
+    </div>
+</form>
+
+<h1 style="color:white;">.</h1>
+
+<form method="post" action="/Home/Update" border="0" cellpadding="0" cellspacing="0" style="width:100%;float:left">
+    <div class="input-group">
+        <h3>UPDATE BOOK</h3>
+        <input type="text" name="bid" class="form-control" placeholder="BOOK ID" />
+        <input type="text" name="bname" class="form-control" placeholder="BOOK NAME" />
+        <input type="text" name="bauthor" class="form-control" placeholder="AUTHOR NAME" />
+        <input type="text" name="bprice" class="form-control" placeholder="PRICE" />
+        <br />
+        <input type="submit" value="GO" style="float:right;background:white;" />
+    </div>
+</form>
+
+
+<!-- CSS part -->
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #1600e5;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #8296e0;
+    }
+</style>
+
